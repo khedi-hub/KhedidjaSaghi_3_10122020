@@ -52,6 +52,9 @@ body {
   text-align: center;
   padding-top: 15px;
 }
+.logo img {
+  width: 50%;
+}
 .logo p {
   height: 5vh;
   background-color: beige;
