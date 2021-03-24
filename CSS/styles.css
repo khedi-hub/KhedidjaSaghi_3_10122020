@@ -41,13 +41,13 @@ html {
 }
 
 body {
+  font-family: "robotoregular", Arial, Helvetica;
   margin-left: 0 auto;
   margin-right: 0 auto;
 }
 
 .logo {
-  height: 14vh;
-  background-color: aqua;
+  height: 13vh;
   width: 99%;
   text-align: center;
   padding-top: 15px;
@@ -57,7 +57,7 @@ body {
 }
 .logo p {
   height: 5vh;
-  background-color: beige;
+  background-color: #EAEAEA;
   display: flex;
   justify-content: center;
   padding-top: 10px;
@@ -67,51 +67,68 @@ body {
 }
 
 .presentation {
-  background-color: burlywood;
-  height: 30vh;
+  background-color: #f6f6f6;
+  height: 36vh;
   text-align: center;
   padding-top: 15px;
+  width: 99%;
+  font-size: 1em;
+}
+.presentation h2 {
   width: 99%;
 }
 .presentation button {
   border-radius: 25px;
   height: 35px;
   width: 55%;
+  background: linear-gradient(#ff79DA 5%, #9356DC);
+  border: transparent;
+  color: white;
+  font-family: "robotoregular", Arial, Helvetica;
 }
 
 .menu {
-  background-color: darkcyan;
-  height: 35vh;
+  background-color: white;
+  height: 38vh;
   width: 99%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 20px;
 }
 .menu button {
   width: 75%;
-  height: 40px;
-  border-radius: 10px;
+  height: 50px;
+  border-radius: 15px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: #aaaaaa;
+  border-color: transparent;
 }
 .menu i.fas {
+  color: black;
+}
+.menu i.fas :hover {
   color: #9356DC;
 }
 .menu .number {
   border-radius: 50%;
   background-color: #9356DC;
-  width: 15px;
-  float: left;
+  padding: 4px;
+  width: 11px;
   color: white;
   font-size: 0.8em;
+  margin-left: -20px;
 }
 
 .restaurant {
   width: 99%;
-  background-color: chocolate;
+  background-color: #f6f6f6;
+  box-shadow: #f6f6f6;
   height: 150vh;
   display: flex;
   flex-direction: column;
@@ -119,11 +136,13 @@ body {
 }
 
 .carte {
-  background-color: chartreuse;
-  width: 95%;
+  width: 90%;
   margin: auto;
-  height: 32vh;
+  height: 30vh;
   border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 .carte a {
   list-style-type: none;
@@ -132,16 +151,29 @@ body {
 
 .vignette {
   width: 100%;
-  height: 18vh;
-  background-color: cornsilk;
+  height: 21vh;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.vignette img {
+  width: 100%;
+  height: 21vh;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  object-position: 50% 60%;
 }
 .vignette p {
   background-color: #99E2D0;
+  color: #1b6150;
+  font-weight: bold;
+  position: absolute;
   width: 19vw;
   font-size: 0.8em;
-  float: right;
   text-align: center;
   margin-right: 3%;
   padding: 5px;
@@ -152,26 +184,35 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
-  background-color: crimson;
-  height: 10vh;
-  margin: 10px;
+  color: black;
+  height: 9vh;
+  margin: 9px;
+  margin-top: 0%;
 }
 .text i {
   margin-top: 20px;
-  margin-right: 5px;
+  margin-right: 8px;
+}
+.text i .fas {
+  border: #d2d2d2;
 }
 
 footer {
   background-color: black;
   width: 99%;
+  height: 35vh;
 }
 footer .basdepage {
   width: 95%;
-  margin: auto;
+  margin-left: 25px;
   color: white;
+  padding-top: 30px;
 }
-footer .basdepage .logo2 {
-  font-size: 1em;
+footer .basdepage .logo2 img {
+  width: 50%;
+}
+footer .basdepage i {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
