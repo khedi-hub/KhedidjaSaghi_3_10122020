@@ -50,8 +50,10 @@ body {
   font-family: 'robotoregular',Arial, Helvetica;
   margin-left: 0 auto;
   margin-right: 0 auto;
+  height: auto;
 }
 
+/*page accueil html*/
 .logo {
   height: 13vh;
   width: 99%;
@@ -270,6 +272,181 @@ body {
   border: #d2d2d2;
 }
 
+/*page menu*/
+.entete {
+  width: 99%;
+  height: 38vh;
+}
+
+.entete .logo3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+  width: 95%;
+  height: 4vh;
+}
+
+.entete .logo3 i {
+  color: black;
+  margin-top: 6px;
+}
+
+.entete .logo3 img {
+  width: 50%;
+}
+
+.entete .vignette2 {
+  width: 99%;
+  height: 31vh;
+  margin-top: 3%;
+}
+
+.entete .vignette2 img {
+  width: 100%;
+  height: 31vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 50%;
+     object-position: 100% 50%;
+}
+
+.pagemenu {
+  width: 99%;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #f2f2f2;
+}
+
+.pagemenu h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.pagemenu h2 i {
+  float: right;
+}
+
+.pagemenu .repas {
+  width: 95%;
+  height: 150%;
+  margin: auto;
+  /*background-color: coral;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pagemenu .repas p {
+  margin-bottom: 1%;
+}
+
+.pagemenu .repas span {
+  width: 40px;
+  border-top: 2px solid #99E2D0;
+  padding-top: 15px;
+}
+
+.pagemenu .repas .recette {
+  width: 95%;
+  height: 10vh;
+  margin: auto;
+  border-radius: 15px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+.pagemenu .repas .recette .cardmenu {
+  width: 85%;
+  height: 10vh;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-size: 0.74em;
+  background-color: white;
+}
+
+.pagemenu .repas .recette .prix {
+  width: 15%;
+  height: 10vh;
+  background-color: white;
+}
+
+.pagemenu .repas .recette .prix p {
+  margin-top: 38px;
+}
+
+.pagemenu .repas .recette .check {
+  width: 10%;
+  height: 10vh;
+  background-color: white;
+  font-size: 1.5em;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.pagemenu .repas .recette .check:hover {
+  width: 40%;
+  background-color: #99E2D0;
+  color: white;
+  visibility: visible;
+}
+
+.pagemenu .repas .recette .check:hover .fas {
+  visibility: visible;
+}
+
+.pagemenu .repas .recette .check .fas {
+  color: white;
+  background: #99E2D0;
+  margin-top: 20px;
+  margin-left: 15px;
+  visibility: hidden;
+}
+
+.pagemenu .button {
+  text-align: center;
+  height: 13vh;
+  padding-top: 25px;
+}
+
+.pagemenu .button button {
+  margin: auto;
+  border-radius: 25px;
+  height: 35px;
+  width: 55%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff79DA), to(#9356DC));
+  background: linear-gradient(#ff79DA 5%, #9356DC);
+  border: transparent;
+  color: white;
+  font-family: 'robotoregular',Arial, Helvetica;
+}
+
+/*footer*/
 footer {
   background-color: black;
   width: 99%;

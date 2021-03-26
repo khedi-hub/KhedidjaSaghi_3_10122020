@@ -1,58 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <script src="https://kit.fontawesome.com/a7db51a10c.js" crossorigin="anonymous"></script>
-    <title>La palette du goût</title>
+    <title>la palette du goût</title>
 </head>
 <body>
-    <header>
-        <div>
-        <i class="fas fa-arrow-left"></i><img src="images/logo/ohmyfood@2x.svg" alt="logo">
-        <img src="" alt="">
+    <header class="entete"><!--la palette du goût-->
+        <div class="logo3">
+            <a href="./accueil.html"><i class="fas fa-arrow-left"></i></a>
+            <img src="images/logo/ohmyfood.png" alt="logo">
+        </div>
+        <div class="vignette2">
+            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
         </div>
     </header>
-    <section>
-        <h2>La palette du goût</h2><i class="far fa-heart"></i>
-        <div>
-            <p>ENTREES</p>
-            <span></span><!--trait endessous du mots-->
-            <p><strong>Fricassée d'escargot</strong><br>Au piment d'espelette</p>
-            <p>25€<i class="fas fa-check-circle"></i></p>
-            <p><strong>Foie gras de canard mi-cuit</strong><br>Et ses copeaux de truffe noire</p>
-            <p>35€<i class="fas fa-check-circle"></i></p>
-            <p><strong>Oeuf au plat</strong><br>Assaisonné à la truffe sur lit de...</p>
-            <p>20€<i class="fas fa-check-circle"></i></p>
-        </div>
-        <div>
-            <p>PLATS</p>
-            <span></span><!--trait endessous du mots-->
-            <p><strong>Filet de boeuf aux herbes</strong><br>Accompagné de sa ribambelle de légum...</p>
-            <p>40€<i class="fas fa-check-circle"></i></p>
-            <p><strong>Parmentier de queue de boeuf</strong><br>A la truffe noire sur sa purée de panais</p>
-            <p>35€<i class="fas fa-check-circle"></i></p>
-            <p><strong>Filet de turbot</strong><br>Aux agrumes</p>
-            <p>44€<i class="fas fa-check-circle"></i></p>
-        </div>
-        <div>
-            <p>DESSERTS</p>
-            <span></span><!--trait endessous du mots-->
-            <p><strong>Paris-Brest</strong><br>Revisité</p>
-            <p>18€<i class="fas fa-check-circle"></i></p>
-            <p><strong>macaron au chocolat d'exception</strong><br>Et glace à la vanille de Madagascar</p>
-            <p>22€<i class="fas fa-check-circle"></i></p>
-            <p><strong>mousse au chocolat</strong><br>Au piment d'espelette et à la truffe noire</p>
-            <p>23€<i class="fas fa-check-circle"></i></p>
-        </div>
-        <div><button>Commander</button></div>
+    <section class="pagemenu">
+        <h2>La palette du goût<i class="far fa-heart"></i></h2>
+            <div class="repas">
+                <p>ENTREES</p>
+                <span></span><!--trait endessous du mots-->
+                <div class="recette">
+                    <div class="cardmenu"><p><strong>Fricassée d'escargot</strong></p><p>piment d'espelette</p></div>
+                    <div class="prix"><p><strong>25€</strong></p></div><div class="check"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="recette">
+                    <div class="cardmenu"><p><strong>Foie gras de canard mi-cuit</strong></p><p>Et ses copeaux de truffe noire</p></div>
+                    <div class="prix"><p><strong>35€</strong></p></div><div class="check"><i class="fas fa-check-circle"></i></div>
+                </div> 
+                <div class="recette">  
+                    <div class="cardmenu"><p><strong>Oeuf au plat</strong><br>Assaisonné à la truffe sur lit de...</p></div>                    
+                    <div class="prix"><p><strong>20€</strong></p></div><div class="check"><i class="fas fa-check-circle"></i></p></div>
+                </div>
+           </div>
+           <div class="repas">
+                <p>PLATS</p>
+                <span></span><!--trait endessous du mots-->
+                <div class="recette">
+                    <div class="cardmenu"><p><strong>Filet de boeuf aux herbes</strong></p><p>Accompagné de sa ribambelle de légum...</p></div>
+                    <div class="prix"><p ><strong>40€</strong></div><div class="check"><i class="fas fa-check-circle"></i></p></div>
+                </div>
+                <div class="recette">
+                    <div class="cardmenu"><p><strong>Parmentier de queue de boeuf</strong></p><p>la truffe noire sur sa purée de panais</p></div>
+                    <div class="prix"><p ><strong>35€</strong></div><div class="check"><i class="fas fa-check-circle"></i></p></div>
+                </div>
+                <div class="recette">                    
+                    <div class="cardmenu"><p><strong>Filet de turbot</strong></p><p>agrumes</p></div>
+                    <div class="prix"><p><strong>44€</strong></div><div class="check"><i class="fas fa-check-circle"></i></p></div>
+                </div>
+            </div>
+            <div class="repas">
+                <p>DESSERTS</p>
+                <span></span><!--trait endessous du mots-->
+                <div class="recette">
+                    <div class="cardmenu"><p><strong>Paris-Brest</strong></p><p>Revisité</p></div>
+                    <div class="prix"><p ><strong>18€</strong></div><div class="check"><i class="fas fa-check-circle"></i></p></div>
+                </div>
+                <div class="recette">
+                    <div class="cardmenu"><p><strong>macaron au chocolat d'exception</strong></p><p>Et glace à la vanille de Madagascar</p></div>
+                    <div class="prix"><p><strong>22€</strong></div><div class="check"><i class="fas fa-check-circle"></i></p></div>
+                </div>
+                <div class="recette">
+                    <div class="cardmenu"><p><strong>mousse au chocolat</strong></p><p>piment d'espelette et à la truffe noire</p></div>
+                    <div class="prix"><p><strong>23€</strong></div><div class="check"><i class="fas fa-check-circle"></i></p></div>
+                </div>
+            </div>
+            <div class="button">
+                <button>Commander</button>
+            </div>
     </section>
 
     <footer>
-        <div>
-            <img src="images/logo/ohmyfood.png" alt="logo">
+        <div class="basdepage">
+            <div class="logo2">
+            <img src="images/logo/ohmyfood@2x.svg" alt="logo en blanc">
+            </div>
             <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
             <P><i class="fas fa-hands-helping"></i>Devenir partenaire</P>
             <P>Mentions légales</P>

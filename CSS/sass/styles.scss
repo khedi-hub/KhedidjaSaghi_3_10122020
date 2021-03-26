@@ -69,8 +69,12 @@ body
     font-family: 'robotoregular',Arial, Helvetica;
     margin-left:0 auto;
     margin-right:0 auto;
+    height: auto;
+
+    
    
 }
+/*page accueil html*/
 .logo
 {
     height: 13vh;   
@@ -254,9 +258,175 @@ body
         }
     }
 }
+/*page menu*/
+.entete
+{
+    width:99%;
+    height: 38vh;
+    .logo3
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 10px;
+        width:95%;
+        height: 4vh;
+        i 
+        {
+            color: black;
+            margin-top:6px;
+        }
+        img 
+        {
+          width:50%;  
+        }
+        
+    }
+    .vignette2
+    {    
+        width: 99%;
+        height: 31vh;
+        margin-top: 3%;
+        img 
+        {
+            width: 100%;
+            height: 31vh;
+            object-fit: cover;
+            object-position:100% 50%;  
+        }
+    }
+    
+}
+.pagemenu
+ {
+    width: 99%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    background-color: #f2f2f2;                
+    h2 
+    {
+        width:100%;
+        text-align: center;
+        i 
+        {
+            float: right;
+           
+
+        }
+    }
+    .repas
+    {
+        width: 95%;
+        height: 150%;
+        margin: auto;
+        /*background-color: coral;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+            margin-bottom: 1%;
+        }
+        span 
+        {
+            width: 40px;
+            border-top: 2px solid $color-tertiary;
+            padding-top: 15px;
+        }
+        .recette
+        {
+            width: 95%;
+            height: 10vh;
+            margin: auto;
+            border-radius: 15px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+            
+            .cardmenu
+            {   
+                width: 85%;
+                height: 10vh;
+                border-top-left-radius:15px;
+                border-bottom-left-radius:15px;
+                font-size: 0.74em;
+                background-color:white;
+               
+                               
+            }
+            .prix
+            {
+                width: 15%;
+                height: 10vh;                              
+                background-color:white;
+                
+                p
+                {
+                    margin-top: 38px;
+                }
+               
+            }
+            .check
+            {
+                width:10%;
+                height: 10vh;                
+                background-color:white;                    
+                font-size: 1.5em;
+                border-top-right-radius:15px;
+                border-bottom-right-radius:15px;
+                &:hover
+                {
+                    width: 40%;
+                    background-color:$color-tertiary;
+                    color: white;
+                    visibility: visible;
+                    .fas
+                    {
+                        visibility: visible;
+                    }
+                    
+                }
+           
+                .fas{
+                 color:white;
+                background: $color-tertiary;
+                margin-top:20px;
+                margin-left: 15px;
+                visibility: hidden;    
+           
+             }
+
+         }
+        }
+    } 
+    .button
+    {
+        text-align: center;
+        height: 13vh;
+        padding-top: 25px;
+        button
+    {
+        margin:auto;
+        border-radius: 25px;
+        height: 35px;
+        width: 55%;
+        background: linear-gradient($color-secondary 5%,$color-primary);
+        border: transparent;
+        color: white;
+        font-family:'robotoregular',Arial, Helvetica;
+    }   
+    }  
+    
+}
+   
+/*footer*/
 footer
 {
-    background-color: black;    
+    background-color:black;    
     width: 99%;
     height: 35vh;
     .basdepage
