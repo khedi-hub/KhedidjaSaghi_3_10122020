@@ -254,7 +254,7 @@ body
         margin-right: 8px;
         .fas
         {
-        border: #d2d2d2;
+        /*border: #d2d2d2;*/
         }
     }
 }
@@ -308,14 +308,52 @@ body
     background-color: #f2f2f2;                
     h2 
     {
-        width:100%;
-        text-align: center;
-        i 
-        {
-            float: right;
-           
-
+        width:95%;
+        font-family:'shrikhandregular';
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-left: 20px;
+        
+        i{
+            margin-left: 40px;
+            margin-right: 15px ;
         }
+        
+         .far
+            {
+                position:relative;
+                visibility: visible;
+                
+            }
+            
+
+         .fas
+            {
+                position: absolute;
+                visibility: hidden;
+
+            
+            } 
+        
+        &:hover
+            {
+               .fas
+               {
+                   position: relative;
+                   visibility: visible;
+                   color: yellowgreen;
+               }
+                .far
+                {
+                    position: absolute;
+                    visibility: hidden;
+                }
+            }     
+           
+        
+
+        
     }
     .repas
     {
