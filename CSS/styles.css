@@ -88,6 +88,9 @@ body {
   color: white;
   font-family: "robotoregular", Arial, Helvetica;
 }
+.presentation button:hover {
+  background: linear-gradient(#ff79DA 5%, #9356DC);
+}
 
 .menu {
   background-color: white;

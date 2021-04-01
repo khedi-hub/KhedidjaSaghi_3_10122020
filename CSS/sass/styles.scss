@@ -69,10 +69,7 @@ body
     font-family: 'robotoregular',Arial, Helvetica;
     margin-left:0 auto;
     margin-right:0 auto;
-    height: auto;
-
-    
-   
+    height: auto;  
 }
 /*page accueil html*/
 .logo
@@ -123,6 +120,10 @@ body
         border: transparent;
         color: white;
         font-family:'robotoregular',Arial, Helvetica;
+        &:hover
+        {
+            background: linear-gradient($color-secondary 5%,$color-primary);
+        }
     }
 }
 
