@@ -195,8 +195,22 @@ body {
   margin-top: 20px;
   margin-right: 8px;
 }
-.text i .fas {
-  /*border: #d2d2d2;*/
+.text .far {
+  position: relative;
+  visibility: visible;
+}
+.text .fas {
+  position: absolute;
+  visibility: hidden;
+}
+.text:hover .fas {
+  position: relative;
+  visibility: visible;
+  color: #ff79DA;
+}
+.text:hover .far {
+  position: absolute;
+  visibility: hidden;
 }
 
 /*page menu*/
@@ -263,7 +277,7 @@ body {
 .pagemenu h2:hover .fas {
   position: relative;
   visibility: visible;
-  color: yellowgreen;
+  color: #ff79DA;
 }
 .pagemenu h2:hover .far {
   position: absolute;
@@ -295,26 +309,33 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
-.pagemenu .repas .recette .cardmenu {
-  width: 85%;
-  height: 10vh;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  font-size: 0.74em;
-  background-color: white;
+.pagemenu .repas .recette .p1 {
+  width: 280px;
+  height: auto;
+  margin-left: 10px;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-bottom: 15px;
+  transform: scale(1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.pagemenu .repas .recette .prix {
-  width: 15%;
-  height: 10vh;
-  background-color: white;
-}
-.pagemenu .repas .recette .prix p {
-  margin-top: 38px;
+.pagemenu .repas .recette .p2 {
+  width: 18%;
+  height: 3vh;
+  font-size: 0.75em;
+  float: right;
+  margin-top: 30px;
+  margin-right: 5px;
+  font-size: 1.2em;
 }
 .pagemenu .repas .recette .check {
-  width: 10%;
+  width: 15px;
   height: 10vh;
   background-color: white;
   font-size: 1.5em;
@@ -322,13 +343,16 @@ body {
   border-bottom-right-radius: 15px;
 }
 .pagemenu .repas .recette .check:hover {
-  width: 40%;
+  width: 115px;
   background-color: #99E2D0;
   color: white;
   visibility: visible;
 }
 .pagemenu .repas .recette .check:hover .fas {
   visibility: visible;
+}
+.pagemenu .repas .recette .check:active + .p1 {
+  transform: scale(0.1);
 }
 .pagemenu .repas .recette .check .fas {
   color: white;

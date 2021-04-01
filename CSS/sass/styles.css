@@ -268,8 +268,25 @@ body {
   margin-right: 8px;
 }
 
-.text i .fas {
-  /*border: #d2d2d2;*/
+.text .far {
+  position: relative;
+  visibility: visible;
+}
+
+.text .fas {
+  position: absolute;
+  visibility: hidden;
+}
+
+.text:hover .fas {
+  position: relative;
+  visibility: visible;
+  color: #ff79DA;
+}
+
+.text:hover .far {
+  position: absolute;
+  visibility: hidden;
 }
 
 /*page menu*/
@@ -354,7 +371,7 @@ body {
 .pagemenu h2:hover .fas {
   position: relative;
   visibility: visible;
-  color: yellowgreen;
+  color: #ff79DA;
 }
 
 .pagemenu h2:hover .far {
@@ -404,26 +421,49 @@ body {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 10px;
 }
 
 .pagemenu .repas .recette .cardmenu {
-  width: 85%;
-  height: 10vh;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  font-size: 0.74em;
-  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 210px;
+  height: 8vh;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 0.75em;
+  line-height: 1.2em;
+  background-color: royalblue;
 }
 
-.pagemenu .repas .recette .prix {
-  width: 15%;
-  height: 10vh;
-  background-color: white;
+.pagemenu .repas .recette .cardmenu p {
+  width: 400px;
+  background-color: powderblue;
 }
 
-.pagemenu .repas .recette .prix p {
-  margin-top: 38px;
+.pagemenu .repas .recette .cardmenu p:hover {
+  width: 145px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pagemenu .repas .recette .cardmenu .prix {
+  width: 10%;
+  height: 5vh;
+  margin-top: 15px;
+  margin-left: 49%;
+  background-color: palegreen;
+}
+
+.pagemenu .repas .recette .cardmenu:hover {
+  width: 150px;
 }
 
 .pagemenu .repas .recette .check {
@@ -436,7 +476,7 @@ body {
 }
 
 .pagemenu .repas .recette .check:hover {
-  width: 40%;
+  width: 50%;
   background-color: #99E2D0;
   color: white;
   visibility: visible;
