@@ -120,10 +120,7 @@ body
         border: transparent;
         color: white;
         font-family:'robotoregular',Arial, Helvetica;
-        &:hover
-        {
-            background: linear-gradient($color-secondary 5%,$color-primary);
-        }
+        
     }
 }
 
