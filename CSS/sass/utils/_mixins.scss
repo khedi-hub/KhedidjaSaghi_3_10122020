@@ -1,0 +1,53 @@
+@mixin heart {
+    .far
+            {
+                position:relative;
+                visibility: visible;
+                color: #3d3d3d;    
+            }            
+       .fas
+            {
+                position: absolute;
+                visibility: hidden;
+                color:white;
+                transform: scale(0.1);
+            } 
+            
+        &:hover
+        {
+               .fas
+               {
+                   position: relative;
+                   visibility: visible;
+                   color:#bb63db;
+                   transition: 500ms;
+                   transform-origin: bottom;
+                   transform: scale(1);
+               }
+                .far
+                {
+                    position: absolute;
+                    visibility: hidden;
+                }
+        }
+        
+}
+@mixin btn
+{
+    border-radius: 25px;
+        height: 35px;
+        width: 55%;
+        background: linear-gradient($color-secondary 5%,$color-primary);
+        border: transparent;
+        color: white;
+        font-family: $font;
+}
+@mixin shadow($amount:20) 
+{
+ box-shadow: 3px 3px 3px 3px darken($color: #f6f6f6, $amount: 20);
+}
+@mixin radius($value:15px)
+{
+    border-top-left-radius:  $value;
+    border-top-right-radius: $value;
+}
