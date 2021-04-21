@@ -1,3 +1,4 @@
+@import"./utils/reset";
 @import"./utils/variables";
 @import"./utils/mixins";
 @import"./utils/responsive";
@@ -72,7 +73,7 @@ body
     margin-right:0 auto;
     height: auto;  
 }
-.load
+/*.load
 {
    display: flex;
    justify-content: space-around;
@@ -113,7 +114,7 @@ body
     width: 40px;
     height: 40px;
     }
-  }
+  }*/
 
 /*page accueil html*/
 .logo
@@ -125,7 +126,8 @@ body
     
     img 
     {
-       width: 50%;   
+       width: 50%; 
+       margin-bottom: 10px;  
     }
     p
     {   
@@ -133,6 +135,7 @@ body
         background-color: #EAEAEA;
         display:flex;
         font-weight: bold;
+        font-size: 0.9em;
         color: #3d3d3d;
         justify-content: center;
         padding-top: 12px;  
@@ -146,14 +149,24 @@ body
 .presentation
 {
     background-color: #f6f6f6;
-    height: 36vh;
+    height: 30vh;
     text-align: center;
     padding-top: 15px;
     width: 100%;
-    font-size: 1em;
+    
     h2 
     {
-        width: 99%;   
+        width: 65%;
+        font-size: 1.1em;
+        margin-left:50px; 
+        margin-bottom: 15px;  
+    }
+    p 
+    {
+        width:80%;
+        margin-left: 30px;
+        font-size: 0.9em;
+        margin-bottom: 20px;
     }
     button
     {
@@ -177,23 +190,31 @@ body
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    align-items: center;
+    /*align-items: center;*/
     padding-bottom: 45px;
-
+    h2 
+    {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
     button
     {
         width: 75%;
         height: 50px;
         border-radius: 15px;
         display: flex;
+        margin-left: 50px;
         justify-content:space-around;
         flex-direction: row;
         align-items:center;
         font-weight: bold;
+        font-size: 0.8em;
         background-color:#f6f6f6;
         text-decoration-color: #3d3d3d;
         @include shadow(20);
-        border-color:transparent;    
+        /*border-color:transparent; */
+        border:none; 
     }
     i.fas 
     {
@@ -208,10 +229,10 @@ body
         border-radius: 50%;
         background-color:$color-primary;
         padding: 4px;
-        width: 11px;
+        width: 20px;
         color:white;
         font-size: 0.8em;
-        margin-left: -20px;
+        margin-left: -30px;
     }
 }
 .restaurant
@@ -226,6 +247,7 @@ body
     p 
     {
         margin-left: 20px;
+        margin-top: 25px;
     }
 }
 .carte
@@ -233,7 +255,7 @@ body
     width: 90%;
     margin: auto;
     margin-bottom: 1%;
-    height: 35vh;
+    height: 33vh;
     border-radius: 15px;
     background-color: white;
     display: flex;
@@ -250,7 +272,7 @@ body
 .vignette
 {
     width: 100%;
-    height: 21vh;
+    height: 23vh;
     @include radius(15px); 
     display: flex;
     flex-direction: row;
@@ -259,7 +281,7 @@ body
     img 
     {
         width:100%;
-        height: 21vh;
+        height: 23vh;
         position: relative;
         @include radius(15px);
         object-fit: cover;
@@ -271,10 +293,10 @@ body
         color:darken($color-tertiary,50); 
         font-weight: bold;
         position: absolute;
-        width:19vw;
+        width:20vw;
         font-size: 0.8em;       
         text-align: center;
-        margin-right: 3%;
+        margin-right: 5%;
         padding: 5px;        
     }
 }
@@ -284,24 +306,24 @@ body
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:auto;
     color:black; 
-    height: 9vh;
-    margin: 9px;
-    margin-top: 0%;
+    height: 8vh;
+    
+   
     @include heart;
     p
     {
-        font-size: 1em;
-        line-height: 1.5em;
-        margin-left: 0%;
+        font-size: 0.85em;
+        line-height: 1.3em;
+        margin-left: 5px;
+        margin-top: 15px;
 
     }
     i
     {
         margin-top: 20px;
         margin-right: 8px;  
-        font-size: 1.5em; 
+        font-size: 1.2em; 
         cursor: pointer; 
     }       
     
@@ -309,7 +331,7 @@ body
 /*page menu*/
 .entete
 {   
-    width:99%;
+    width:100%;
     height: 38vh;   
     z-index: -1;
     
@@ -320,7 +342,7 @@ body
         justify-content: space-around;
         padding-top: 10px;
         width:95%;
-        height: 4vh;
+        height: 6vh;
         i 
         {
             color: black;
@@ -334,7 +356,7 @@ body
     .vignette2
     {   
         
-        width: 98%;
+        width: 100%;
         height: 31vh;
         margin-top: 3%; 
         z-index: -1;
@@ -342,7 +364,7 @@ body
         img 
         {
             position: fixed;
-            width: 93%;
+            width: 100%;
             height: 30vh;
             object-fit: cover;
             object-position:100% 50%;   
@@ -353,7 +375,7 @@ body
 
 .pagemenu
  { 
-    width: 99%;    
+    width: 100%;    
     height: auto;
     margin-top: -30px;
     z-index: 3;
@@ -364,14 +386,15 @@ body
     {
         width:95%;
         font-family:'shrikhandregular';
-        font-style: italic;
-        font-weight: bold;
+        font-style:italic;
+        font-weight:bold;
         font-size: 1.5em;
-        margin-left: 20px;
+        margin-left: 18px;
+        margin-bottom: 25px;
         @include heart;   
         i{
-            margin-left: 40px;
-            margin-right: 15px ;
+            margin-left: 50px;
+            margin-right: 20px ;
         }            
     }
     .repas
@@ -382,9 +405,11 @@ body
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 22px;
     
         p {
             margin-bottom: 1%;
+            font-size: 1em;
         }
         span 
         {
@@ -402,19 +427,18 @@ body
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-between;
-            margin-bottom: 10px;            
-            
-                        
+            justify-content: space-around;
+            margin-bottom: 10px;                                    
                 .p1
                 {
                     width: 280px;
                     height: auto;
                     margin-left: 10px;
-                    font-size: 0.75em;
+                    margin-top: 11px;
+                    font-size: 0.9em;
                     line-height: 1.5em;
                     text-align:justify;
-                    margin-bottom: 15px;
+                    margin-bottom: 10px;
                     transform: scale(1);
                     white-space: nowrap;
                     overflow:hidden;
@@ -424,15 +448,15 @@ body
                 {
                 width:18%;
                 height: 3vh;
-                font-size: 0.75em;
-                float: right;
-                margin-top: 30px;
-                margin-right: 5px; 
-                font-size: 1.2em;                                                                      
+                font-size: 1em;
+                /*float: right;*/
+                margin-top:30px;
+                margin-left:10px; 
+                                                                                      
                 }                                         
             .check
             {
-                width:15px;
+                width:12px;
                 height: 10vh;                
                 background-color:rgb(255, 255, 255);                    
                 font-size: 1.5em;
@@ -441,7 +465,7 @@ body
                 cursor:pointer;
                 &:hover
                 {
-                    width: 115px;
+                    width: 90px;
                     background-color:$color-tertiary;
                     color: white;
                     visibility: visible;
@@ -460,10 +484,8 @@ body
                 background: $color-tertiary;
                 margin-top:20px;
                 margin-left: 21px;
-                visibility: hidden;    
-           
+                visibility: hidden;               
                 }
-
             }            
         }
         @for $i from 0 through 10 {
@@ -501,7 +523,7 @@ body
     {
         text-align: center;
         height: 13vh;
-        padding-top: 25px;
+        padding-top: 10px;
         button
         {
             margin:auto;
@@ -522,23 +544,27 @@ footer
 {   
     background-color:black;    
     width: 100%;
-    height: 35vh;
+    height: 25vh;
     .basdepage
     {
         width: 95%;
         margin-left: 25px;
         color: white;
         padding-top: 30px;
+        line-height: 1.7em;
+        font-size: 0.9em;
         .logo2
         {
             img
             {           
-            width:50%;
+            width:30%;
+            margin-bottom: 10px;
             }
         } 
         i
         {
             margin-right: 20px;
+            font-size: 0.9em;
         }
         
     }
