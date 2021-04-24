@@ -63,14 +63,14 @@
 }
 html
 {
-    margin-left:0 auto;
-    margin-right:0 auto;
+    margin-left:0;
+    margin-right:0;
 }
 body
 {
     font-family: $font;
-    margin-left:0 auto;
-    margin-right:0 auto;
+    margin-left:0;
+    margin-right:0;
     height: auto;  
 }
 /*mise en place du loader*/
@@ -144,8 +144,9 @@ body
 /*page accueil html*/
 .logo
 {
-    height: 14vh;   
+    height: 17vh;   
     width: 100%;
+    margin: auto;
     text-align: center;
     padding-top: 15px;
     
@@ -179,7 +180,7 @@ body
 {
     .logo
     {
-        height: 17vh; 
+        height: 16.5vh; 
      
     }   
 }
@@ -188,7 +189,7 @@ body
 .presentation
 {
     background-color: #f6f6f6;
-    height: 30vh;
+    height: 34vh;
     text-align: center;
     padding-top: 15px;
     width: 100%;
@@ -227,7 +228,7 @@ body
 {
     .presentation
     
-    {   height: 35vh;
+    {   height: 40vh;
         h2 
         {
             font-size:1.6em;
@@ -255,7 +256,7 @@ body
 {
     background-color: white;
     margin: auto;
-    height: 35vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -307,13 +308,14 @@ body
         height: 12vh;
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: nowrap;
         
         button
         {
-            width:220px;
+            width:200px;
             margin:auto;
+            
         }
     }
 }
@@ -893,6 +895,13 @@ footer
             margin-right: 20px;
             font-size: 0.9em;
         }
+        .link
+        {
+            list-style-type: none;
+            text-decoration: none; 
+            color: white;
+            cursor: pointer;
+        }
 
         
     }
@@ -921,7 +930,7 @@ footer
         {
             font-size: 1em;
         }
-        
+           
         }
         
     }

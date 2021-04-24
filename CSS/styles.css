@@ -83,14 +83,14 @@ td, th {
   font-style: normal;
 }
 html {
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 body {
   font-family: "robotoregular", Arial, Helvetica;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
   height: auto;
 }
 
@@ -165,8 +165,9 @@ body {
 }
 /*page accueil html*/
 .logo {
-  height: 14vh;
+  height: 17vh;
   width: 100%;
+  margin: auto;
   text-align: center;
   padding-top: 15px;
 }
@@ -194,13 +195,13 @@ body {
 /*media queries pour logo*/
 @media only screen and (min-width:768px) {
   .logo {
-    height: 17vh;
+    height: 16.5vh;
   }
 }
 /*fin media queries pour logo*/
 .presentation {
   background-color: #f6f6f6;
-  height: 30vh;
+  height: 34vh;
   text-align: center;
   padding-top: 15px;
   width: 100%;
@@ -236,7 +237,7 @@ body {
 /* début media queries presentation*/
 @media only screen and (min-width:768px) {
   .presentation {
-    height: 35vh;
+    height: 40vh;
   }
   .presentation h2 {
     font-size: 1.6em;
@@ -259,7 +260,7 @@ body {
 .menu {
   background-color: white;
   margin: auto;
-  height: 35vh;
+  height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -305,11 +306,11 @@ body {
     height: 12vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
   }
   .menu button {
-    width: 220px;
+    width: 200px;
     margin: auto;
   }
 }
@@ -865,6 +866,12 @@ footer .basdepage .logo2 img {
 footer .basdepage i {
   margin-right: 20px;
   font-size: 0.9em;
+}
+footer .basdepage .link {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 /* début media queries footer*/
