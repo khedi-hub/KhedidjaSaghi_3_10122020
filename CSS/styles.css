@@ -48,37 +48,37 @@ td, th {
 /*jkfodij*/
 @font-face {
   font-family: "shrikhandregular";
-  src: url("shrikhand-regular-webfont.woff2") format("woff2"), url("shrikhand-regular-webfont.woff") format("woff");
+  src: url("fonts/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("fonts/shrikhand/shrikhand-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotobold";
-  src: url("roboto-bold-webfont.woff2") format("woff2"), url("roboto-bold-webfont.woff") format("woff");
+  src: url("fonts/roboto/roboto-bold-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoitalic";
-  src: url("roboto-italic-webfont.woff2") format("woff2"), url("roboto-italic-webfont.woff") format("woff");
+  src: url("fonts/roboto/roboto-italic-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoregular";
-  src: url("roboto-regular-webfont.woff2") format("woff2"), url("roboto-regular-webfont.woff") format("woff");
+  src: url("fonts/roboto/roboto-regular-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoblack";
-  src: url("roboto-black-webfont.woff2") format("woff2"), url("roboto-black-webfont.woff") format("woff");
+  src: url("fonts/roboto/roboto-black-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotomedium";
-  src: url("roboto-medium-webfont.woff2") format("woff2"), url("roboto-medium-webfont.woff") format("woff");
+  src: url("fonts/roboto/roboto-medium-webfont.woff2") format("woff2"), url("fonts/roboto/roboto-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -165,7 +165,7 @@ body {
 }
 /*page accueil html*/
 .logo {
-  height: 17vh;
+  height: 14vh;
   width: 100%;
   text-align: center;
   padding-top: 15px;
@@ -175,7 +175,7 @@ body {
   margin-bottom: 10px;
 }
 .logo p {
-  height: 8vh;
+  height: 7vh;
   background-color: #EAEAEA;
   box-shadow: 0px 0px 5px 0px #9e9e9e;
   display: flex;
@@ -248,7 +248,7 @@ body {
     width: 200px;
   }
 }
-/*media queries pour présentation*/
+/*fin media queries pour présentation*/
 .menuh2 h2 {
   margin-top: 20px;
   margin-left: 20px;
@@ -407,7 +407,7 @@ body {
 }
 .text p {
   font-size: 0.85em;
-  line-height: 1.3em;
+  line-height: 1.5em;
   margin-left: 5px;
   margin-top: 15px;
 }
@@ -477,16 +477,20 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 10px;
-  width: 95%;
-  height: 6vh;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 2%;
+  width: 85%;
+  height: 5vh;
 }
 .entete .logo3 i {
   color: black;
-  margin-top: 6px;
+  margin-top: 4px;
+  margin-right: 3%;
 }
 .entete .logo3 img {
-  width: 50%;
+  width: 150px;
+  margin-left: 2%;
 }
 .entete .vignette2 {
   width: 100%;
@@ -507,18 +511,16 @@ body {
   }
   .entete .logo3 {
     justify-content: space-around;
-    width: 80%;
-    height: 9vh;
+    width: 85%;
+    height: 5vh;
     margin-top: 1%;
-    margin-left: 10%;
+    margin-left: 1%;
   }
   .entete .logo3 i {
     font-size: 1.5em;
     color: black;
     margin-top: 6px;
-  }
-  .entete .logo3 img {
-    width: 40%;
+    margin-right: 5%;
   }
   .entete .vignette2 {
     height: 50vh;
@@ -553,8 +555,8 @@ body {
   font-family: "shrikhandregular";
   font-style: italic;
   font-weight: bold;
-  font-size: 1.5em;
-  margin-left: 18px;
+  font-size: 1.4em;
+  margin-left: 9px;
   margin-bottom: 25px;
 }
 .pagemenu h2 .far {
@@ -581,8 +583,7 @@ body {
   visibility: hidden;
 }
 .pagemenu h2 i {
-  margin-left: 50px;
-  margin-right: 20px;
+  margin-left: 15%;
 }
 .pagemenu .repas {
   width: 100%;
@@ -595,16 +596,18 @@ body {
 }
 .pagemenu .repas .p3 {
   margin-bottom: 1%;
+  margin-left: 10px;
   font-size: 1em;
 }
 .pagemenu .repas span {
   width: 40px;
+  margin-left: 10px;
   border-top: 2px solid #99E2D0;
   padding-top: 15px;
 }
 .pagemenu .repas .recette {
   width: 95%;
-  height: 10vh;
+  height: 8vh;
   margin: auto;
   border-radius: 15px;
   background-color: white;
@@ -637,8 +640,8 @@ body {
   margin-left: 10px;
 }
 .pagemenu .repas .recette .check {
-  width: 12px;
-  height: 10vh;
+  width: 13px;
+  height: 8vh;
   background-color: white;
   font-size: 1.5em;
   border-top-right-radius: 15px;
@@ -661,7 +664,7 @@ body {
   color: white;
   background: #99E2D0;
   margin-top: 20px;
-  margin-left: 21px;
+  margin-left: 19px;
   visibility: hidden;
 }
 .pagemenu .repas .item-0 {
@@ -758,13 +761,13 @@ body {
     width: 100%;
   }
   .pagemenu h2 {
-    width: 95%;
+    width: 90%;
     font-size: 1.9em;
     margin-left: 10%;
     margin-bottom: 25px;
   }
   .pagemenu h2 i {
-    margin-left: 50%;
+    margin-left: 40%;
   }
   .pagemenu .repas {
     width: 80%;
@@ -843,6 +846,7 @@ body {
 /*footer*/
 footer {
   background-color: black;
+  margin: auto;
   width: 100%;
   height: 25vh;
 }
