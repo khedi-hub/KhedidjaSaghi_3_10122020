@@ -482,14 +482,15 @@ body
     
     .logo3
     {
+        
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding-top: 15px;
         margin-bottom: 15px;
         margin-left: 2%;
-        width:85%;
-        height: 5vh;
+        width:280px;
+        height: 6vh;
         
         i 
         {
@@ -530,18 +531,18 @@ body
     
         .logo3
         {
-        justify-content: space-around;
-        width:85%;
-        height: 5vh;
+        justify-content: space-between;
+        width:450px;
+        height: 8vh;
         margin-top: 1%;
-        margin-left: 1%;
+        margin-left: 20%;
         
         i 
         {
             font-size: 1.5em;
             color: black;
             margin-top:6px; 
-            margin-right: 5%;  
+            margin-right:10%;  
         }
                 }       
     
@@ -619,8 +620,8 @@ body
         }
         .recette
         {
-            width: 95%;
-            height: 8vh;
+            width: 290px;
+            height: 55px;
             margin: auto;
             border-radius: 15px;
             background-color: white;
@@ -636,8 +637,8 @@ body
                     height: auto;
                     margin-left: 10px;
                     margin-top: 11px;
-                    font-size: 0.9em;
-                    line-height: 1.5em;
+                    font-size: 0.85em;
+                    line-height: 1.2em;
                     text-align:justify;
                     margin-bottom: 10px;
                     transform: scale(1);
@@ -650,14 +651,14 @@ body
                 width:18%;
                 height: 3vh;
                 font-size: 1em;
-                margin-top:30px;
+                margin-top:25px;
                 margin-left:10px; 
                                                                                       
                 }                                         
             .check
             {
                 width:13px;
-                height: 8vh;                
+                height: 55px;                
                 background-color:rgb(255, 255, 255);                    
                 font-size: 1.5em;
                 border-top-right-radius:15px;
@@ -682,7 +683,7 @@ body
                 {
                 color:white;
                 background: $color-tertiary;
-                margin-top:20px;
+                margin-top:17px;
                 margin-left: 19px;
                 visibility: hidden;               
                 }
@@ -772,11 +773,10 @@ body
             }
             .recette
             {
-                width: 90%;
-
+                width: 400px;
                 .p1
                 {
-                    font-size:1em;
+                    font-size:0.9em;
                 }
                 .p2
                 {
@@ -833,8 +833,7 @@ body
             }
             .recette
             {
-                width: 95%;
-
+                width: 290px;
                 .p1
                 {
                     font-size:0.9em;
