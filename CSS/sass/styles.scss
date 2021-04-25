@@ -69,8 +69,8 @@ html
 body
 {
     font-family: $font;
-    margin-left:0;
-    margin-right:0;
+    margin-left:auto;
+    margin-right:auto;
     height: auto;  
 }
 /*mise en place du loader*/
@@ -144,7 +144,7 @@ body
 /*page accueil html*/
 .logo
 {
-    height: 17vh;   
+    height: 102px;   
     width: 100%;
     margin: auto;
     text-align: center;
@@ -157,7 +157,7 @@ body
     }
     p
     {   
-        height: 7vh;
+        height: 45px;
         background-color: #EAEAEA;
         box-shadow: 0px 0px 5px 0px darken($color: #eaeaea, $amount: 30);
         display:flex;
@@ -174,22 +174,11 @@ body
     }
 }
 /*media querie pour ecran tablette et ordi*/
-/*media queries pour logo*/
-
-@media #{$medium-up}
-{
-    .logo
-    {
-        height: 16.5vh; 
-     
-    }   
-}
-/*fin media queries pour logo*/
 
 .presentation
 {
     background-color: #f6f6f6;
-    height: 34vh;
+    height: 220px;
     text-align: center;
     padding-top: 15px;
     width: 100%;
@@ -228,7 +217,7 @@ body
 {
     .presentation
     
-    {   height: 40vh;
+    {   height: 240px;
         h2 
         {
             font-size:1.6em;
@@ -256,7 +245,7 @@ body
 {
     background-color: white;
     margin: auto;
-    height: 40vh;
+    height: 260px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -326,7 +315,7 @@ body
 {
     width:100%;
     background-color: #f6f6f6;
-    height: 160vh;
+    height: 165vh;
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -341,8 +330,8 @@ body
 {
     width: 90%;
     margin: auto;
-    margin-bottom: 1%;
-    height: 33vh;
+    margin-bottom: 35px;
+    height:255px;
     border-radius: 15px;
     background-color: white;
     display: flex;
@@ -374,35 +363,39 @@ body
         object-fit: cover;
         object-position:50% 60%;
     }
-    p
+    .new
     {
         background-color: $color-tertiary;
         color:darken($color-tertiary,50); 
         font-weight: bold;
         position: absolute;
-        width:20vw;
+        margin-left: 65%;
+        margin-right: 10px;
+        width:70px;
         font-size: 0.8em;       
         text-align: center;
-        margin-right: 5%;
-        padding: 5px;        
+        padding: 5px;
+
     }
 }
 
 .text
-{
+{  
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     color:black; 
-    height: 8vh;  
+    height: 7vh;  
     @include heart;
     p
     {
         font-size: 0.85em;
         line-height: 1.5em;
         margin-left: 5px;
-        margin-top: 15px;
-
+        width: 40vw;
+        height:8vh ;
+        margin-top: 6px;
+        
     }
     i
     {
@@ -439,8 +432,9 @@ body
       margin-bottom: 10px; 
       .new
       {
+          margin-left:30%;
           margin-right: 2%;
-          width:15vw;
+          
       }  
   }  
 
@@ -456,11 +450,6 @@ body
       width: 35vw;
       height: 38vh;
       margin-bottom: 20px; 
-      .new
-      {
-          margin-right: 1%;
-          width:10vw;
-      }  
   } 
   .vignette
   {
@@ -822,9 +811,9 @@ body
         {
             width:30%;
             .p3 {
-                width: 100%;
+                width: 45%;
                 font-size: 1.5em;
-                margin-left: 30%;    
+                margin-left: 30%;  
             }
             span 
             {
