@@ -88,6 +88,7 @@ html {
 }
 
 body {
+  width: 100%;
   font-family: "robotoregular", Arial, Helvetica;
   margin-left: auto;
   margin-right: auto;
@@ -198,6 +199,7 @@ body {
   text-align: center;
   padding-top: 15px;
   width: 100%;
+  margin: auto;
 }
 .presentation h2 {
   width: 100%;
@@ -841,19 +843,25 @@ footer {
   background-color: black;
   margin: auto;
   width: 100%;
-  height: 25vh;
+  height: 30vh;
 }
 footer .basdepage {
-  width: 95%;
+  width: 85%;
   margin-left: 25px;
   color: white;
   padding-top: 30px;
   line-height: 1.7em;
   font-size: 0.9em;
 }
+footer .basdepage .logo2 {
+  width: 60%;
+}
 footer .basdepage .logo2 img {
-  width: 30%;
+  width: 70%;
   margin-bottom: 10px;
+}
+footer .basdepage p {
+  width: 70%;
 }
 footer .basdepage i {
   margin-right: 20px;
