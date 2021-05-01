@@ -646,8 +646,8 @@ body
                 margin-left:10px; 
                                                                                       
                 }                                         
-            .check
-            {
+                .check
+                {
                 width:13px;
                 height: 55px;                
                 background-color:rgb(255, 255, 255);                    
@@ -655,17 +655,7 @@ body
                 border-top-right-radius:15px;
                 border-bottom-right-radius:15px;
                 cursor:pointer;
-                &:hover
-                {
-                    width: 90px;
-                    background-color:$color-tertiary;
-                    color: white;
-                    visibility: visible;
-                    .fas
-                    {
-                        visibility: visible;
-                    }                     
-                }
+                
                 &:active + .p1
                 {
                     transform: scale(0.1);
@@ -678,7 +668,20 @@ body
                 margin-left: 19px;
                 visibility: hidden;               
                 }
-            }            
+             
+            }
+            &:hover>.check
+                {
+                    width: 90px;
+                    background-color:$color-tertiary;
+                    color: white;
+                    visibility: visible;
+                    
+                    .fas
+                    {
+                        visibility: visible;
+                    }                     
+                }            
         }
         @for $i from 0 through 10 {
             .item-#{$i}

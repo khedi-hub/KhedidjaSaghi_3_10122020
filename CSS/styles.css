@@ -844,17 +844,6 @@ body {
   cursor: pointer;
 }
 
-.pagemenu .repas .recette .check:hover {
-  width: 90px;
-  background-color: #99E2D0;
-  color: white;
-  visibility: visible;
-}
-
-.pagemenu .repas .recette .check:hover .fas {
-  visibility: visible;
-}
-
 .pagemenu .repas .recette .check:active + .p1 {
   -webkit-transform: scale(0.1);
           transform: scale(0.1);
@@ -866,6 +855,17 @@ body {
   margin-top: 17px;
   margin-left: 19px;
   visibility: hidden;
+}
+
+.pagemenu .repas .recette:hover > .check {
+  width: 90px;
+  background-color: #99E2D0;
+  color: white;
+  visibility: visible;
+}
+
+.pagemenu .repas .recette:hover > .check .fas {
+  visibility: visible;
 }
 
 .pagemenu .repas .item-0 {
