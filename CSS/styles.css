@@ -792,13 +792,13 @@ body {
     flex-wrap: wrap;
   }
   .pagemenu h2 {
-    width: 80%;
+    width: 91%;
     height: 5vh;
-    margin-left: 10%;
+    margin-left: 3%;
     margin-bottom: 50px;
   }
   .pagemenu h2 i {
-    margin-left: 60%;
+    margin-left: 55%;
     margin-right: 0;
   }
   .pagemenu .repas {
